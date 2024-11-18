@@ -1,0 +1,13 @@
+Beispiel SW-Fehler:
+
+Daten werden nicht korrekt vom BE geladen.
+
+
+Beispiel SW-Mangel:
+
+Es gibt keine Moeglichkeit, sich auf der Banking-App einzuloggen.
+
+
+Beispiel hohen Schaden SW-Fehler:
+
+Die Berechnung eines Guthabens einer Bankkonto ist inkorrekt. 
