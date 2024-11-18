@@ -1,0 +1,8 @@
+Unit tests
+Man ueberprueft die Methoden einer Klasse
+
+Performance tests
+Man versucht, das System zu ueberlasten, indem man sehr viele Anfragen auf einmal schickt
+
+End to end tests
+Man testet den Datenfluss von Anfang bis Ende
