@@ -1,7 +1,7 @@
-| ID  | description                                            | expectation                                    | result                 |
+| ID  | description                                            | expectation                                    | result                | status | problem          |
 |-----|--------------------------------------------------------|------------------------------------------------|-----------------------|--------|------------------|
-| 1   | Autosuche basierend auf Standort und Datum             | Zeigt eine Liste von verfügbaren Autos an      | Funktioniert korrekt  | Pass   | -                |
-| 2   | Buchung eines Autos mit persönlichen und Zahlungsdaten | Bestätigung der Buchung nach Eingabe der Daten | Funktioniert korrekt  | Pass   | -                |
-| 3   | Überprüfung der Verfügbarkeit eines Autos              | Zeigt keine Autos, wenn keine verfügbar sind   | Fehler                | Fail   | Fehlerhafte DB   |
-| 4   | Buchung stornieren                                     | Stornierungsbestätigung erscheint             | Funktioniert korrekt  | Pass   | -                |
-| 5   | Preis inkl. Steuern und Gebühren angezeigt             | Gesamtpreis wird korrekt angezeigt             | Funktioniert korrekt  | Pass   | -                |
+| 1   | can select a location                                  | displays pickup spot                           | works as expected     | Pass   | -                |
+| 2   | can view rentable cars                                 | displays rentable cars list                    | works as expected     | Pass   | -                |
+| 3   | can change language                                    | displays site with different language          | works as expected     | Fail   | -                |
+| 4   | can open q&a                                           | displays common q&a                            | works as expected     | Pass   | -                |
+| 5   | can change currency                                    | displays price in different currency           | works as expected     | Pass   | -                |
