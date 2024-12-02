@@ -1,4 +1,4 @@
-| ID  | description                                            | result                                         | Effektives Resultat   | Status | Mögliche Ursache |
+| ID  | description                                            | expectation                                    | result                 |
 |-----|--------------------------------------------------------|------------------------------------------------|-----------------------|--------|------------------|
 | 1   | Autosuche basierend auf Standort und Datum             | Zeigt eine Liste von verfügbaren Autos an      | Funktioniert korrekt  | Pass   | -                |
 | 2   | Buchung eines Autos mit persönlichen und Zahlungsdaten | Bestätigung der Buchung nach Eingabe der Daten | Funktioniert korrekt  | Pass   | -                |
