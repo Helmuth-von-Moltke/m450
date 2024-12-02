@@ -1,0 +1,8 @@
+https://www.enterprise.com/en/car-rental-locations/us.html
+Test cases:
+1. can select a location
+2. can view rentable cars
+3. can change language
+4. can open q&a
+5. can change currency
+

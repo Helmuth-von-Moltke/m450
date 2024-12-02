@@ -1,0 +1,10 @@
+If price < 15'000 --> 0% discount
+If 15'000 <= price <= 20'000 --> 5% discount
+If 20'000 <= price <= 25'000 --> 7% discount
+If 25'000 < price --> 8.5% discount 
+
+
+14'000 --> 0%
+19'000 --> 5%
+24'000 --> 7%
+26'000 --> 8.5%
