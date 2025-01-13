@@ -45,7 +45,7 @@ catch (Exception e) {
 
 new:
 catch (Exception e) {
-    logger.error("Error fetching exchange rate from {} to {}: {}", currencyFrom, currencyTo, e.getMessage(), e);
+    System.out.println("Error fetching exchange rate from {} to {}: {}", currencyFrom, currencyTo, e.getMessage(), e);
     return 0.0;
 }
 
