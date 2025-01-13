@@ -1,1 +1,51 @@
 Blackbox test cases:
+access non-existent account
+request non-existent action
+deposit negative number
+request exchange rate for non-existent currency
+
+Whitebox test cases:
+Account.withdraw()
+Counter.chooseAccount()
+Counter.editAccount()
+Counter.transfer()
+Counter.transferAmount()
+Counter.withdraw()
+
+Code improvement:
+old:
+Request request = new Request.Builder()
+        .url("https://api.apilayer.com/exchangerates_data/convert?to=" + currencyTo + "&from=" + currencyFrom + "&amount=1")
+        .addHeader("apikey", "aZA8SRPPWKe8RCu4fLT9dGtgAUfkwVfS")
+        .method("GET", null)
+        .build();
+
+new:
+String apiKey = System.getenv("EXCHANGE_API_KEY");
+String apiUrl = System.getenv("EXCHANGE_API_URL");
+
+if (apiKey == null || apiUrl == null) {
+    System.out.println("! API configuration is missing. Please set environment variables.");
+    return 0.0;
+}
+
+Request request = new Request.Builder()
+        .url(apiUrl + "?to=" + currencyTo + "&from=" + currencyFrom + "&amount=1")
+        .addHeader("apikey", apiKey)
+        .method("GET", null)
+        .build();
+
+Eliminate hard coding
+
+old:
+catch (Exception e) {
+    System.out.println("! Error bei der Abfrage des Wechselkurses: " + e.getMessage());
+    return 0.0;
+}
+
+new:
+catch (Exception e) {
+    logger.error("Error fetching exchange rate from {} to {}: {}", currencyFrom, currencyTo, e.getMessage(), e);
+    return 0.0;
+}
+
