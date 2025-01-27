@@ -58,3 +58,8 @@ A Mocking Framework was used where it made sense to simulate external dependenci
 - Every commit or pull request triggers the pipeline.
 - Tests are run automatically.
 
+## Automatisierung des Testings (Dokumentation)
+
+run `ng test` to get the following documentation from Karma:
+
+![karma documentation](karmadocumentation.jpg "Karma documentation")
