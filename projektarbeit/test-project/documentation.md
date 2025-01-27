@@ -1,3 +1,7 @@
+## Formale Vorgaben:
+
+All scripts related to this project can be found within this GIT repository, including `spec.ts` files and `.yml` files.
+
 ## Grobe Architektur visualisiert
 
 I used Draw.io to create a some sort of a diagram, displaying the structure of the project. Additionally information about each components were added too, including whether they shall be tested. 
