@@ -32,12 +32,29 @@
 
 ## Einsatz Mocking Framework
 
-A Mocking Framework was used where it made sense to simulate external dependencies and isolate components for testing.
+A Mocking Framework was used where it made sense to simulate external dependencies.
 
 ### Where Mocking Was Used
-- **Router Service**: Mocked the `Router` in the Observable (Admin) component tests to simulate navigation without actual route changes.
+- **Router Service**: Mocked the Router in the Observable (Admin) component tests to simulate navigation.
 - **Behavior**: Verified that navigation methods were called with the correct arguments.
-- **No unnecessary mocks**: Other components (e.g., Todo, Noting) didn’t require external dependencies, so mocking wasn’t applied unnecessarily.
+- **No unnecessary mocks**: Other components (e.g., Todo, Noting) didn’t require external dependencies, so mocking wasn’t applied.
 
-### Summary
-Mocking was applied meaningfully, focusing on areas where isolation was required to test behavior. No redundant or irrelevant mocks were introduced.
+## Automatisierung des Testings (Ausführung)
+
+### CI/CD Pipeline Overview
+- A CI/CD pipeline was set up using **GitHub Actions**.
+- The pipeline triggers automatically on:
+  - Push events to the `main` branch.
+  - Pull Requests targeting the `main` branch.
+
+### Pipeline Steps
+1. Fetches the latest code from the repository.
+2. Configures Node.js environment to run Angular tests.
+3. Runs `npm install` to set up the project.
+4. Executes `ng test` in headless mode to verify all test cases.
+5. Builds the application in production mode.
+
+### Execution
+- Every commit or pull request triggers the pipeline.
+- Tests are run automatically.
+
