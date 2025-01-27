@@ -1,0 +1,21 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.delete-button {
+  font-size: 25px;
+  color: white;
+  background-color: #ff5733;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+.task {
+  font-size: 40px;
+}

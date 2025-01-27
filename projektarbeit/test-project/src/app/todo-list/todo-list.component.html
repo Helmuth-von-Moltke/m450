@@ -1,0 +1,12 @@
+<div class="centered-items">
+<h2 class="title">todo list</h2>
+<ul>
+  <li *ngFor="let todo of todos; let i = index" class="task">
+    <img src="/public/assets/images/todo.JPEG">
+    {{ todo }}
+    <button (click)="removeTodo(i)" class="delete-button">remove</button>
+  </li>
+</ul>
+<input [(ngModel)]="newTodo" placeholder="new task" class="input-field"/>
+<button (click)="addTodo()" class="add-button">add</button>
+</div>

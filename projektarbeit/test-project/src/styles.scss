@@ -1,0 +1,39 @@
+$small-font: 25px;
+
+
+.input-field {
+    width: 400px;
+    font-size: $small-font;
+}
+
+.add-button {
+    background-color: blue;
+    color: beige;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    font-size: $small-font;
+
+    &:hover {
+        background-color: darken(blue, 30%);
+        transition: 0.5s;
+        cursor: pointer;
+        font-size: 35px;
+    }
+}
+
+.submit-button {
+    font-size: 80px;
+    padding: 20px;
+    margin: 10px;
+    background-color: green;
+    color: yellow;
+    border: none;
+
+    &:hover {
+        background-color: darken(green, 10%);
+        color: lighten(yellow, 30%);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}

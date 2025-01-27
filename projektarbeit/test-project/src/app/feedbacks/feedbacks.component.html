@@ -1,0 +1,12 @@
+<div class="centered-items">
+  <h2 class="title">User Feedback</h2>
+  <div *ngFor="let feedback of feedbacks" class="feedback-item">
+    <div class="feedback-card">
+      <div>Name: {{ feedback.name }}</div>
+      <div>Email: {{ feedback.email }}</div>
+      <div>Age: {{ feedback.age }}</div>
+      <div>Phone Number: {{ feedback.phoneNumber }}</div>
+      <div>Message: </div>
+    </div>
+  </div>
+</div>

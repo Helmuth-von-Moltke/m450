@@ -1,0 +1,38 @@
+<div class="centered-items">
+  <h2 class="title">Admin Page</h2>
+
+  <label for="age-filter">filter by age</label>
+  <input
+    id="age-filter"
+    type="range"
+    min="0"
+    max="100"
+    [value]="(ageFilter$ | async) || 0"
+    (input)="updateAgeFilter($event)"
+  />
+  <p>Showing users with age >= {{ (ageFilter$ | async) || 0 }}</p>
+  <ul>
+    <li *ngFor="let user of filteredUsers$ | async">
+      {{ user.name }}, {{ user.age }} years old, {{ user.email }}
+      <button (click)="editUser(user.id)">view</button>
+    </li>
+  </ul>
+
+  <label for="age-filter-R">filter by age</label>
+  <input
+    id="age-filter-R"
+    type="range"
+    min="0"
+    max="100"
+    [value]="(ageFilterR$ | async) || 0"
+    (input)="updateAgeFilterR($event)"
+  />
+  <p>Showing users with age >= {{ (ageFilterR$ | async) || 0 }}</p>
+  <ul>
+    <li *ngFor="let user of filteredUsersR$ | async">
+      {{ user.name }}, {{ user.age }} years old, {{ user.email }}
+    </li>
+  </ul>
+
+  <button (click)="navigateToNotFound()">navi</button>
+</div>
