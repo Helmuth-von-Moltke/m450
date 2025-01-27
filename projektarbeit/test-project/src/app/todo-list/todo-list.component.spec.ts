@@ -91,5 +91,27 @@ describe('TodoListComponent', () => {
     });
   })  
 
-  
+  it('should edit a todo when the Edit button is clicked', () => {
+    fixture.detectChanges();
+
+    const todoElements = fixture.debugElement.queryAll(By.css('.task'));
+    const editButton = todoElements[0].query(By.css('.edit-button')).nativeElement;
+
+    editButton.click();
+    fixture.detectChanges();
+
+    const inputField = todoElements[0].query(By.css('input.edit-input')).nativeElement;
+    expect(inputField).toBeTruthy();
+
+    inputField.value = 'Edited Task';
+    inputField.dispatchEvent(new Event('input'));
+    const saveButton = todoElements[0].query(By.css('.save-button')).nativeElement;
+    saveButton.click();
+    fixture.detectChanges();
+
+    expect(component.todos[0]).toBe('Edited Task');
+    const updatedTodo = todoElements[0].nativeElement.textContent.trim();
+    expect(updatedTodo).toContain('Edited Task');
+  });
+
 });
