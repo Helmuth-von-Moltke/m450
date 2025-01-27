@@ -1,3 +1,21 @@
+## Grobe Architektur visualisiert
+
+I used Draw.io to create a some sort of a diagram, displaying the structure of the project. Additionally information about each components were added too, including whether they shall be tested. 
+
+![project structure](projektstruktur.jpg "project structure")
+
+## Testkonzept
+
+The test concept was documented in Word, covering test items, features to be tested, features not to be tested, approach, and other key details. It serves as a plan and a reference while working on each task.
+
+### Why a Testkonzept is Needed
+- Clear Scope: Defines what will and won’t be tested, avoiding wasted effort on unnecessary areas.
+- Organized Approach: Provides a step-by-step plan, ensuring tasks are completed systematically.
+- Consistency: Helps maintain uniform testing standards throughout the project.
+- Better Communication: Acts as a shared reference for understanding the testing process, useful if others join the project.
+- Quality Assurance: Ensures all critical features are tested, reducing the risk of bugs or missed functionality.
+
+
 ## Wahl der Testfälle (Komponententests)
 
 ### Todo Component
